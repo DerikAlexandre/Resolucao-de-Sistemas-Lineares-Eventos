@@ -1,49 +1,71 @@
-Sistemas Lineares Aplicados ao Planejamento de Eventos
+Sistemas Lineares aplicados ao Planejamento Estratégico de Eventos
 
-Este projeto utiliza métodos numéricos para resolver um sistema linear aplicado ao planejamento ideal de eventos ao longo de 5 anos, considerando restrições de consumo de bebidas e buscando o maior lucro possível.
+Este projeto calcula a quantidade ideal de eventos que uma empresa deve realizar ao longo de 5 anos para maximizar o lucro, respeitando as restrições do estoque de bebidas.
+O problema é modelado como um sistema linear 3×3 e resolvido por três métodos numéricos.
 
-O código resolve o sistema utilizando três métodos:
+🎯 Objetivo do problema
 
-🔹 Métodos Implementados
-Método	Tipo	Observação
-Eliminação de Gauss	Direto	Fornece solução exata dentro da precisão numérica
-Gauss-Jacobi	Iterativo	Convergência dependente da matriz
-Gauss-Seidel	Iterativo	Convergência mais rápida que Jacobi
-📌 Modelo matemático
+Determinar quantos eventos de cada tipo podem ser realizados:
 
-O planejamento está baseado no seguinte sistema de equações:
+Evento	Símbolo	Lucro por evento
+Shows abertos ao público	E1	R$ 3.000
+Festas corporativas	E2	R$ 5.000
+Casamentos	E3	R$ 6.000
 
-5E1 + 1E2 + 1E3 = 3000   (Consumo total de Whisky)
-3E1 + 4E2 + 1E3 = 5000   (Consumo total de Cerveja)
-2E1 + 1E2 + 4E3 = 6000   (Consumo total de Champagne)
+O consumo de bebidas por evento gera o sistema:
+
+5E1 + 1E2 + 1E3 = 3000   (Whisky)
+3E1 + 4E2 + 1E3 = 5000   (Cerveja)
+2E1 + 1E2 + 4E3 = 6000   (Champagne)
 
 
-Onde:
+A solução fornece a quantidade ideal de cada evento e o lucro total esperado.
 
-E1 = Shows abertos ao público
+🧠 Métodos Numéricos Implementados
+Método	Tipo	Característica
+Eliminação de Gauss	Direto	Solução exata dentro da precisão numérica
+Gauss-Jacobi	Iterativo	Aproxima a solução via iterações sucessivas
+Gauss-Seidel	Iterativo	Variação do Jacobi com convergência mais rápida
 
-E2 = Festas corporativas
+O programa também compara o desempenho entre Jacobi e Seidel.
 
-E3 = Casamentos
+📈 Resultados apresentados na execução
 
-O objetivo é encontrar a quantidade ideal de cada evento e calcular o lucro total ao final de 5 anos.
+O programa exibe automaticamente:
 
-📈 Resultados exibidos pelo programa
+Quantidade ideal de cada evento
 
-O código imprime automaticamente:
+Lucro total estimado por 5 anos
 
-✔ Quantidade ideal de cada tipo de evento
-✔ Lucro total estimado e lucro médio anual
-✔ Número de iterações de Jacobi e Seidel (comparação de desempenho)
+Lucro médio anual
+
+Número de iterações de Jacobi e Seidel e comparação de velocidade
+
+Exemplo de resumo visual final:
+
+CONCLUSÃO FINAL — PLANEJAMENTO IDEAL
+Shows abertos ao público: XX eventos
+Festas corporativas:      XX eventos
+Casamentos:               XX eventos
+
+Lucro total estimado: R$ X.XXX.XXX,00
+Lucro médio anual:    R$ XXX.XXX,00
 
 ▶️ Como executar
 python main.py
 
 
-Não é necessário instalar nenhuma dependência externa — apenas Python.
+Nenhuma biblioteca externa é necessária (apenas Python).
 
-📚 Objetivo acadêmico
+📌 Estrutura do repositório
+main.py  → Implementação dos métodos numéricos + relatório final
 
-Este projeto foi desenvolvido com fins educacionais para demonstrar a aplicação de Álgebra Linear e Métodos Numéricos na resolução de problemas reais de planejamento e otimização.
+🔬 Finalidade
 
-Projeto desenvolvido para fins acadêmicos e de estudo em modelagem matemática e computação científica.
+Projeto desenvolvido com fins educacionais para demonstrar:
+
+Modelagem matemática de problemas reais
+
+Resolução de sistemas lineares via métodos numéricos
+
+Comparação entre métodos diretos e iterativos
