@@ -1,120 +1,121 @@
-📝 README — Sistema Linear Aplicado à Definição de Metas de Eventos
-🎯 Objetivo do Projeto
+# 📝 Sistema Linear Aplicado à Definição de Metas de Eventos
 
-Este projeto aplica conceitos de Cálculo Numérico e Sistemas Lineares para resolver um problema real de uma produtora de eventos.
-Com base no consumo de bebidas (whisky, cerveja e champagne) e nos lucros obtidos por cada tipo de evento, determina-se:
+## Objetivo do Projeto
 
-Quantos shows,
+Este projeto, desenvolvido como parte da disciplina de **Álgebra Linear**, utiliza conceitos de **Cálculo Numérico** e **Sistemas Lineares** para resolver um caso real de uma produtora de eventos.
 
-Quantas festas corporativas,
+Com base no consumo de bebidas (whisky, cerveja e champagne) e nos lucros de cada tipo de evento, determina-se:
 
-Quantos casamentos
+- **Quantos shows**
+- **Quantas festas corporativas**
+- **Quantos casamentos**
 
-devem ser realizados ao longo de 5 anos para maximizar o lucro total da empresa, respeitando as limitações de estoque.
+devem ser realizados ao longo de **5 anos**, visando **maximizar o lucro total** da empresa e respeitando as restrições de estoque.
 
-Para isso, foram aplicados três métodos numéricos:
+Foram aplicados três métodos numéricos:
 
-Eliminação de Gauss (método direto)
+- 🔹 *Eliminação de Gauss* (método direto)  
+- 🔹 *Gauss-Jacobi* (iterativo)  
+- 🔹 *Gauss-Seidel* (iterativo)
 
-Gauss-Jacobi (iterativo)
+---
 
-Gauss-Seidel (iterativo)
+## 📁 Estrutura do Repositório
 
-📁 Estrutura do Repositório
-✔ ProjetoALEvento.py — Solucionador dedicado ao problema
+### ✔ `ProjetoALEvento.py` — Solucionador dedicado ao caso real
 
-Como parte integrante deste relatório e demonstrando a aplicação prática dos conceitos, foi desenvolvido um algoritmo em Python que replica fielmente o caso real da produtora de eventos, resolvendo o sistema linear:
-
-A⋅x=b
-
-O script:
-
-Calcula automaticamente E1, E2 e E3 (shows, festas e casamentos)
-
-Apresenta os resultados dos três métodos (Gauss, Jacobi e Seidel)
-
-Compara a velocidade de convergência
-
-Determina o lucro total estimado e o lucro médio anual
-
-Esse arquivo representa a aplicação prática do estudo de caso.
-
-✔ ProjetoAL.py — Ferramenta universal para sistemas lineares
-
-Além do caso aplicado, desenvolvemos uma biblioteca generalista capaz de resolver qualquer sistema linear n×n.
-
-O arquivo inclui:
-
-Função para testar diagonal dominante automaticamente
-
-Implementações modulares de:
-
-Eliminação de Gauss
-
-Gauss-Jacobi
-
-Gauss-Seidel
-
-Entrada flexível para qualquer matriz A e vetor b
-
-Sistema de detecção de divergência
-
-Função para gerar relatórios das iterações
-
-Essa ferramenta permite que outros problemas de engenharia, economia, administração e otimização sejam resolvidos sem precisar reescrever os métodos.
-
-🧮 Sistema Matemático Utilizado
-
-O sistema do caso real é representado por:
+Script responsável por resolver o sistema linear:
 
 \[
-A =
-\begin{bmatrix}
-5 & 1 & 1 \\
-3 & 4 & 1 \\
-2 & 1 & 4
-\end{bmatrix}
-,\quad
-b =
-\begin{bmatrix}
-3000 \\
-5000 \\
-6000
-\end{bmatrix}
+A \cdot x = b
 \]
 
-Sendo:
+Ele:
 
-E1 = Shows
+- Calcula automaticamente **E1, E2 e E3**  
+- Apresenta resultados por **Gauss, Jacobi e Seidel**  
+- Compara a velocidade de convergência  
+- Mostra **lucro total** e **lucro anual médio**
 
-E2 = Festas Corporativas
+---
 
-E3 = Casamentos
+### ✔ `ProjetoAL.py` — Ferramenta universal n×n
 
-📊 Resultados Obtidos
+Biblioteca generalista para resolver **qualquer sistema linear n × n**.
 
-Os métodos convergem aproximadamente para:
+Inclui:
 
-E1 ≈ 200 shows
+- ✔ Função para testar **diagonal dominante**
+- ✔ Métodos:
+  - Eliminação de Gauss  
+  - Gauss-Jacobi  
+  - Gauss-Seidel  
+- ✔ Verificação automática de divergência  
+- ✔ Geração de relatórios de iteração  
+- ✔ Entrada flexível de qualquer matriz A e vetor b  
 
-E2 ≈ 800 festas corporativas
+Ideal para outros problemas de engenharia, economia, física e otimização.
 
-E3 ≈ 1200 casamentos
+---
 
-Lucro total aproximado:
+## Sistema Matemático Utilizado
 
-R$ 11.800.000,00 a 12.000.000,00
-(dependendo da precisão e do método)
+O sistema utilizado no estudo de caso é:
 
-🚀 Tecnologias Utilizadas
+<p align="center">
+  <img width="320" height="120" src="https://github.com/user-attachments/assets/a71a1c55-4177-4dfd-a211-536bfc48a390" />
+</p>
 
-Python 3.10+
+Onde:
 
-NumPy
+- **E1** → Shows  
+- **E2** → Festas Corporativas  
+- **E3** → Casamentos  
 
-Execução recomendada via VSCode, PyCharm ou Jupyter Notebook
+---
 
-📌 Conclusão
+## 📊 Resultados Obtidos
 
-O projeto demonstra a importância dos métodos numéricos para tomada de decisão, transformando dados reais em informações estratégicas.
-Combinando métodos diretos e iterativos, é possível analisar custos, prever limites e definir metas de produção de forma otimizada.
+Os métodos convergiram aproximadamente para:
+
+| Variável | Quantidade |
+|---------|------------|
+| **E1 (Shows)** | **≈ 200** |
+| **E2 (Festas Corporativas)** | **≈ 800** |
+| **E3 (Casamentos)** | **≈ 1200** |
+
+**Lucro total estimado:**  
+**R$ 11.800.000,00 a R$ 12.000.000,00**
+
+*(variação depende do método e tolerância)*
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **Python 3.10+**
+- **NumPy**
+- Execução recomendada:
+  - VSCode  
+  - PyCharm  
+  - Jupyter Notebook  
+
+---
+
+## 📌 Conclusão
+
+O projeto demonstra a importância dos métodos numéricos estudados em **Álgebra Linear** para a tomada de decisões reais.  
+A combinação entre métodos diretos e iterativos permitiu transformar dados históricos em **informações estratégicas**, definindo metas de produção viáveis e lucrativas.
+
+---
+
+## 👨‍💻 Desenvolvedores
+
+| Nome | Função |
+|------|--------|
+| **DERIK ALEXANDRE ALVES DE ANDRADE** |
+| **KAIC SOARES DE SOUZA** |
+| **KATHELEAN SUYANE NORBERTO** |
+| **PEDRO NOGUEIRA** | 
+| **SAMUEL ABREU DO É** |
+---
