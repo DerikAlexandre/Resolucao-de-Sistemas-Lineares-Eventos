@@ -1,7 +1,7 @@
 📝 README — Sistema Linear Aplicado à Definição de Metas de Eventos
 🎯 Objetivo do Projeto
 
-Este projeto aplica conceitos de Cálculo Numérico e Sistemas Lineares para resolver um problema real de uma produtora de eventos.
+Este projeto, desenvolvido como parte da disciplina de Álgebra Linear, aplica conceitos de Cálculo Numérico e Sistemas Lineares para resolver um problema real de uma produtora de eventos.
 Com base no consumo de bebidas (whisky, cerveja e champagne) e nos lucros obtidos por cada tipo de evento, determina-se:
 
 Quantos shows,
@@ -67,21 +67,7 @@ Essa ferramenta permite que outros problemas de engenharia, economia, administra
 
 O sistema do caso real é representado por:
 
-\[
-A =
-\begin{bmatrix}
-5 & 1 & 1 \\
-3 & 4 & 1 \\
-2 & 1 & 4
-\end{bmatrix}
-,\quad
-b =
-\begin{bmatrix}
-3000 \\
-5000 \\
-6000
-\end{bmatrix}
-\]
+<img width="316" height="114" alt="image" src="https://github.com/user-attachments/assets/a71a1c55-4177-4dfd-a211-536bfc48a390" />
 
 Sendo:
 
@@ -118,3 +104,10 @@ Execução recomendada via VSCode, PyCharm ou Jupyter Notebook
 
 O projeto demonstra a importância dos métodos numéricos para tomada de decisão, transformando dados reais em informações estratégicas.
 Combinando métodos diretos e iterativos, é possível analisar custos, prever limites e definir metas de produção de forma otimizada.
+
+👨‍💻 Desenvolvedores
+DERIK ALEXANDRE ALVES DE ANDRADE
+KAIC SOARES DE SOUZA
+KATHELEAN SUYANE NORBERTO
+PEDRO NOGUEIRA
+SAMUEL ABREU DO É 
