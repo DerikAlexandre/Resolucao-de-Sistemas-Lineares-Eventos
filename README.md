@@ -21,7 +21,7 @@ Gauss-Jacobi (iterativo)
 Gauss-Seidel (iterativo)
 
 📁 Estrutura do Repositório
-✔ caso_eventos.py — Solucionador dedicado ao problema
+✔ ProjetoALEvento.py — Solucionador dedicado ao problema
 
 Como parte integrante deste relatório e demonstrando a aplicação prática dos conceitos, foi desenvolvido um algoritmo em Python que replica fielmente o caso real da produtora de eventos, resolvendo o sistema linear:
 
@@ -39,7 +39,7 @@ Determina o lucro total estimado e o lucro médio anual
 
 Esse arquivo representa a aplicação prática do estudo de caso.
 
-✔ ferramenta_geral.py — Ferramenta universal para sistemas lineares
+✔ ProjetoAL.py — Ferramenta universal para sistemas lineares
 
 Além do caso aplicado, desenvolvemos uma biblioteca generalista capaz de resolver qualquer sistema linear n×n.
 
@@ -82,7 +82,6 @@ b =
 6000
 \end{bmatrix}
 \]
-
 
 Sendo:
 
