@@ -1,71 +1,121 @@
-Sistemas Lineares aplicados ao Planejamento Estratégico de Eventos
+📝 README — Sistema Linear Aplicado à Definição de Metas de Eventos
+🎯 Objetivo do Projeto
 
-Este projeto calcula a quantidade ideal de eventos que uma empresa deve realizar ao longo de 5 anos para maximizar o lucro, respeitando as restrições do estoque de bebidas.
-O problema é modelado como um sistema linear 3×3 e resolvido por três métodos numéricos.
+Este projeto aplica conceitos de Cálculo Numérico e Sistemas Lineares para resolver um problema real de uma produtora de eventos.
+Com base no consumo de bebidas (whisky, cerveja e champagne) e nos lucros obtidos por cada tipo de evento, determina-se:
 
-🎯 Objetivo do problema
+Quantos shows,
 
-Determinar quantos eventos de cada tipo podem ser realizados:
+Quantas festas corporativas,
 
-Evento	Símbolo	Lucro por evento
-Shows abertos ao público	E1	R$ 3.000
-Festas corporativas	E2	R$ 5.000
-Casamentos	E3	R$ 6.000
+Quantos casamentos
 
-O consumo de bebidas por evento gera o sistema:
+devem ser realizados ao longo de 5 anos para maximizar o lucro total da empresa, respeitando as limitações de estoque.
 
-5E1 + 1E2 + 1E3 = 3000   (Whisky)
-3E1 + 4E2 + 1E3 = 5000   (Cerveja)
-2E1 + 1E2 + 4E3 = 6000   (Champagne)
+Para isso, foram aplicados três métodos numéricos:
+
+Eliminação de Gauss (método direto)
+
+Gauss-Jacobi (iterativo)
+
+Gauss-Seidel (iterativo)
+
+📁 Estrutura do Repositório
+✔ caso_eventos.py — Solucionador dedicado ao problema
+
+Como parte integrante deste relatório e demonstrando a aplicação prática dos conceitos, foi desenvolvido um algoritmo em Python que replica fielmente o caso real da produtora de eventos, resolvendo o sistema linear:
+
+A⋅x=b
+
+O script:
+
+Calcula automaticamente E1, E2 e E3 (shows, festas e casamentos)
+
+Apresenta os resultados dos três métodos (Gauss, Jacobi e Seidel)
+
+Compara a velocidade de convergência
+
+Determina o lucro total estimado e o lucro médio anual
+
+Esse arquivo representa a aplicação prática do estudo de caso.
+
+✔ ferramenta_geral.py — Ferramenta universal para sistemas lineares
+
+Além do caso aplicado, desenvolvemos uma biblioteca generalista capaz de resolver qualquer sistema linear n×n.
+
+O arquivo inclui:
+
+Função para testar diagonal dominante automaticamente
+
+Implementações modulares de:
+
+Eliminação de Gauss
+
+Gauss-Jacobi
+
+Gauss-Seidel
+
+Entrada flexível para qualquer matriz A e vetor b
+
+Sistema de detecção de divergência
+
+Função para gerar relatórios das iterações
+
+Essa ferramenta permite que outros problemas de engenharia, economia, administração e otimização sejam resolvidos sem precisar reescrever os métodos.
+
+🧮 Sistema Matemático Utilizado
+
+O sistema do caso real é representado por:
+
+\[
+A =
+\begin{bmatrix}
+5 & 1 & 1 \\
+3 & 4 & 1 \\
+2 & 1 & 4
+\end{bmatrix}
+,\quad
+b =
+\begin{bmatrix}
+3000 \\
+5000 \\
+6000
+\end{bmatrix}
+\]
 
 
-A solução fornece a quantidade ideal de cada evento e o lucro total esperado.
+Sendo:
 
-🧠 Métodos Numéricos Implementados
-Método	Tipo	Característica
-Eliminação de Gauss	Direto	Solução exata dentro da precisão numérica
-Gauss-Jacobi	Iterativo	Aproxima a solução via iterações sucessivas
-Gauss-Seidel	Iterativo	Variação do Jacobi com convergência mais rápida
+E1 = Shows
 
-O programa também compara o desempenho entre Jacobi e Seidel.
+E2 = Festas Corporativas
 
-📈 Resultados apresentados na execução
+E3 = Casamentos
 
-O programa exibe automaticamente:
+📊 Resultados Obtidos
 
-Quantidade ideal de cada evento
+Os métodos convergem aproximadamente para:
 
-Lucro total estimado por 5 anos
+E1 ≈ 200 shows
 
-Lucro médio anual
+E2 ≈ 800 festas corporativas
 
-Número de iterações de Jacobi e Seidel e comparação de velocidade
+E3 ≈ 1200 casamentos
 
-Exemplo de resumo visual final:
+Lucro total aproximado:
 
-CONCLUSÃO FINAL — PLANEJAMENTO IDEAL
-Shows abertos ao público: XX eventos
-Festas corporativas:      XX eventos
-Casamentos:               XX eventos
+R$ 11.800.000,00 a 12.000.000,00
+(dependendo da precisão e do método)
 
-Lucro total estimado: R$ X.XXX.XXX,00
-Lucro médio anual:    R$ XXX.XXX,00
+🚀 Tecnologias Utilizadas
 
-▶️ Como executar
-python main.py
+Python 3.10+
 
+NumPy
 
-Nenhuma biblioteca externa é necessária (apenas Python).
+Execução recomendada via VSCode, PyCharm ou Jupyter Notebook
 
-📌 Estrutura do repositório
-main.py  → Implementação dos métodos numéricos + relatório final
+📌 Conclusão
 
-🔬 Finalidade
-
-Projeto desenvolvido com fins educacionais para demonstrar:
-
-Modelagem matemática de problemas reais
-
-Resolução de sistemas lineares via métodos numéricos
-
-Comparação entre métodos diretos e iterativos
+O projeto demonstra a importância dos métodos numéricos para tomada de decisão, transformando dados reais em informações estratégicas.
+Combinando métodos diretos e iterativos, é possível analisar custos, prever limites e definir metas de produção de forma otimizada.
