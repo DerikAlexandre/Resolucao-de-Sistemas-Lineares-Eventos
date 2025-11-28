@@ -109,8 +109,8 @@ A combinação entre métodos diretos e iterativos permitiu transformar dados hi
 
 ## 👨‍💻 Desenvolvedores
 
-| Nome | Função |
-|------|--------|
+| Nome |
+|------|
 | **DERIK ALEXANDRE ALVES DE ANDRADE** |
 | **KAIC SOARES DE SOUZA** |
 | **KATHELEAN SUYANE NORBERTO** |
