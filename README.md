@@ -26,9 +26,7 @@ Foram aplicados três métodos numéricos:
 
 Script responsável por resolver o sistema linear:
 
-\[
-A \cdot x = b
-\]
+Ax = b
 
 Ele:
 
